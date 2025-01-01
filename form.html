@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,::after,::before{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            
+        }
+        .main{
+            
+            background-color: wheat;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        img{
+            
+            width: 100px;
+            position: relative;
+            right: -60px;
+            border-radius: 80px;
+        }
+        .btn1{
+            margin: 20px;
+            background-color: green;
+            padding: 10px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+        }
+        .btn1:hover{
+            cursor: pointer;
+            background-color: rgb(45, 34, 104);
+        }
+        #t2{
+            background-color: red;
+        }
+        #t2:hover{
+            cursor: pointer;
+            background-color: rgb(168, 45, 117);
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div class="container">
+            <div class="main">
+                <img src="./catImage.jpg" alt="">
+                <form action="https://github.com/Altaseb-chernet" method="post">
+                    <h2>welcome to my Account</h2>
+                    <label for="">name: </label><br>
+                    <input type="text" placeholder="enter username" required>
+                    <br>
+                    <label for="">email:
+                    </label><br>
+                    <input type="email" placeholder="enter your email" required>
+                    <br>
+                    <label for="">password:</label><br>
+                    <input type="password" placeholder="password">
+                    <br>
+                    <label for="">phone number :</label><br>
+                    <input type="tel" placeholder="phone number">
+                    <br>
+                    <input type="checkbox" name="partnership">remember me
+                    <br>
+                    <label for="">radio button</label><br>
+                    <input type="radio" name="choose">male
+                    <input type="radio" name="choose">female
+                    <br>
+                    <input class="btn1" type="submit" value="submit" id="t1">
+                    <input class="btn1" type="reset" value="reset" id="t2">
+                    <br>
+                    <a href="">forget password ?</a>
+                </form>
+            </div>
+        </div>
+    
+</body>
+
+</html>
