@@ -1,0 +1,25 @@
+import turtle 
+my_turtle=turtle.Turtle()
+lists=['red','yellow','green']
+my_turtle.up()
+my_turtle.goto(200,0)
+for i in range(3):
+    my_turtle.down()
+    my_turtle.begin_fill()
+    my_turtle.fillcolor(lists[i])
+    my_turtle.circle(50)
+    my_turtle.end_fill()
+    my_turtle.up()
+    my_turtle.bk(100)
+my_turtle.penup()
+my_turtle.backward(100)
+my_turtle.pendown()
+for i in range(3):
+    my_turtle.down()
+    my_turtle.begin_fill()
+    my_turtle.fillcolor(lists[i])
+    my_turtle.circle(50)
+    my_turtle.end_fill()
+    my_turtle.up()
+    my_turtle.bk(100)
+turtle.done()
